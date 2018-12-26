@@ -1,0 +1,2 @@
+/*样式初始化*/
+@charset"utf-8";html{color:#000;}a,blockquote,body,dd,div,dl,dt,fieldset,form,h1,h2,h3,input,li,ol,p,td,textarea,th,ul{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}b,em,i,strong,u{font-style:normal;font-weight:normal}ol,ul{list-style:none}h1,h2,h3{font-size:100%;font-weight:normal}input,select,textarea{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}a{color:#333333;text-decoration:none}a:hover{color:#FF0000;text-decoration:underline}input{border:none}.fl{float:left}.fr{float:right}

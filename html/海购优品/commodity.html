@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>海购优品-商品搜索</title>
+		<link rel="shortcut icon" href="img/login_0.ico" /> 
+		<link rel="stylesheet" href="css/cssReset.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/commodity.css" />
+		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css">
+	</head>
+
+	<body>
+		<!--
+        	作者：2895166142@qq.com
+        	时间：2018-11-17
+        	描述：搜索商品页面
+        -->
+			
+		<!-- s 顶部-->
+		<div class="top">
+			<div class="top_page">
+				<div class="top_page_l fl">
+					<!--<s></s>-->
+					<i class="iconfont icon-location"></i>
+					<select>
+					  <option value ="北京">北京</option>
+					  <option value ="上海">上海</option>
+					  <option value="浙江">浙江</option>
+					  <option value="河南">河南</option>
+					</select>
+				</div>
+				<div class="top_page_r fr">
+					<a href="login.html" class="login">登陆</a>
+					</li><span class="vl">|</span>
+					<a href="register.html">免费注册</a><span class="vl">|</span>
+					<a href="indent.html">我的订单</a><span class="vl">|</span>
+					<a href="#">收藏夹</a><span class="vl">|</span>
+					<a href="#">帮助中心</a>
+				</div>
+			</div>
+		</div>
+		<!-- e 顶部-->
+		<!--s 头部-->
+		<div class="beader">
+			<!--S= logo-->
+			<div class="logo">
+				<a href="index.html"><h1 class="logo_l fl">海购优品</h1></a>
+				<div class="logo_c fl">
+					<div class="logo_c_top">
+						<input type="search" class="search fl" placeholder="搜索" />
+					<button class="button fl" type="submit"  style="cursor:pointer"><i class="iconfont icon-search search_size"></i></button>
+					</div>
+					<div class="logo_c_bottom">
+						<a href="#" class="hot fl">热搜 : </a>
+						</li>
+						<a href="#">笔记本</a><span>|</span>
+						<a href="#">平板</a><span>|</span>
+						<a href="#">手机</a><span>|</span>
+						<a href="#">墨盒</a>
+						<a href="#" class="gj fr">高级搜索</a>
+					</div>
+				</div>
+				<div class="logo_r fr">
+					<p>
+						<i class="iconfont icon-cart"></i>
+						<a class="shop" href="indent.html">购物车</a>
+						<span class="nums">0</span>
+					</p>
+				</div>
+				<!--E= logo-->
+				<!--S= 导航-->
+				<div class="nav fl">
+					<ul>
+						<li class="firset">
+							<i class="iconfont icon-menu"></i>
+							<a href="commodity.html" class="firset">全部商品分类</a>
+							<i class="iconfont icon-dropdown"></i>
+							<ul>
+								<li>
+									<a  class="bg_q" href="commodity.html">
+										<p>美容彩妆</p>
+									</a>
+									<!--<div class="ul">
+								      	    <a href="#">护肤</a><span class="vl">|</span>
+								      	  	<a href="#">面膜</a><span class="vl">|</span>
+								      	    <a href="#">防晒</a><span class="vl">|</span>
+								      	  	<a href="#">彩妆</a><span class="vl">|</span>
+								      	  	<a href="#">香水</a>  	
+								    </div>  	 -->
+								</li>
+								<li>
+									<a  class="bg_q" href="commodity.html">
+									<p>服饰箱包</p>
+									</a>
+								</li>
+								<li>
+									<a  class="bg_q" href="commodity.html">
+									<p>数码家电</p>
+									</a>
+								</li>
+								<li>
+									<a  class="bg_q" href="commodity.html">
+									<p>家居呵护</p>
+									</a>
+								</li>
+								<li>
+									<a  class="bg_q" href="commodity.html">
+									<p>运动户外</p>
+									</a>
+								</li>
+								<li>
+									<a  class="bg_q" href="commodity.html">
+									<p>环球美食</p>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="commodity.html">促销</a>
+						</li>
+						<li>
+							<a href="#">秒杀</a>
+						</li>
+						<li>
+							<a href="#">优惠券</a>
+						</li>
+					</ul>
+
+				</div>
+				<!--S= 导航-->
+			</div>
+		</div>
+		<!--e 头部-->
+
+		<!--s内容-->
+		<div id="table">
+			<div class="table1">
+				<span class="brand fl">品牌 ：</span>
+				<div class="table1_1 fl">
+					<p class="list1">
+						<a href="#">MENTHOLATUM 曼...</a>
+						<a href="#">NIVEA 妮维雅</a>
+						<a href="#">BIOTHERM 碧欧泉</a>
+						<a href="#">CLINIQUE 倩碧</a>
+						<a href="#">SHISEIDO 资生堂</a>
+						<a href="#" class="sparead fr">展开<s class="open"></s></a>
+					</p>
+					<p class="list2">
+						<a href="#">ESTEE LAUER 雅...</a>
+						<a href="#">CLARINS 娇韵诗</a>
+						<a href="#">LANCOME 兰蔻</a>
+						<a href="#">LVNEIGE 兰芝</a>
+						<a href="#">LOREAL 欧莱雅</a>
+					</p>
+				</div>
+			</div>
+			<div class="table2">
+				<span class="region fl">国家/地区:</span>
+				<div class="table1_1 fl">
+					<p class="list1">
+						<a href="#">日本</a>
+						<a href="#">韩国</a>
+						<a href="#">法国</a>
+						<a href="#">美国</a>
+						<a href="#">澳大利亚</a>
+						<a href="#">中国</a>
+						<a href="#">英国</a>
+						<a href="#">新西兰</a>
+						<a href="#">中国台湾</a>
+						<a href="#">德国</a>
+						<a href="#">瑞士</a>
+						<a href="#">泰国</a>
+						<a href="#">意大利</a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="table2">
+			<ul>
+				<a href="#">
+					<li class="unite1">人气<s class="down_allow"></s></li>
+				</a>
+				<a href="#">
+					<li class="unite">销量</li>
+				</a>
+				<a href="#">
+					<li class="unite">新品</li>
+				</a>
+				<a href="#">
+					<li class="unite">价格</li>
+				</a>
+			</ul>
+			<span class="unite fl">
+    		<input type="text" class="txt" placeholder="￥"> - <input type="text" class="txt" placeholder="￥">
+    	</span>
+			<p class="choose fl">
+				<input type="checkbox" class="checkbox" name="tmall" value="自营商品"><span>自营商品</span>
+				<input type="checkbox" class="checkbox" name="tmall"><span>有货商品</span>
+				<input type="checkbox" class="checkbox" name="tmall"><span>促销商品</span>
+			</p>
+			<span class="color">1</span>/<span class="font">9</span>
+			<s class="lt"></s><s class="gt"></s>
+		</div>
+
+		<div id="goods">
+			<div class="goods fl">
+				<div class="border">
+				<a href="#"><img src="img/4_05.jpg" /></a>
+				<a href="#">
+					<p>Dior 迪奥 花漾甜心小姐女士淡香水...</p>
+				</a>
+				<p class="sz">￥<span>459</span><i>包邮</i><s class="yj fr">￥615</s></p>
+				</div>	
+			</div>
+			<div class="goods fl">
+				<div class="border">
+				<a href="#"><img src="img/01_05.jpg" /></a>
+				<a href="#">
+					<p>Dior 迪奥 烈焰蓝金唇膏 #644.....</p>
+				</a>
+				<p class="sz">￥<span>259</span><i>包邮</i><s class="yj fr">￥320</s></p>
+				</div>	
+			</div>
+			<div class="goods fl">
+				<div class="border">
+				<a href="#"><img src="img/01_05.jpg" /></a>
+				<a href="#">
+					<p>LANCOME 兰蔻 小黑瓶精华肌底液....</p>
+				</a>
+				<p class="sz">￥<span>579</span><i>包邮</i><s class="yj fr">￥760</s></p>
+				</div>	
+			</div>
+
+			<div class="goods_r fr">
+				<div class="border">
+				<a href="#"><img src="img/01_09.gif" /></a>
+				<a href="#">
+					<p>LANCOME 兰蔻 绝对完美诱惑双层....</p>
+				</a>
+				<p class="sz">￥<span>319</span><i>8折</i><s class="yj fr">￥399</s></p>
+				</div>	
+			</div>
+		</div>
+		<div id="goods">
+			<div class="goods fl">
+				<div class="border">
+				<a href="#"><img src="img/01_05.jpg" /></a>
+				<a href="#">
+					<p>Dior 迪奥 花漾甜心小姐女士淡香水...</p>
+				</a>
+				<p class="sz">￥<span>459</span><i>包邮</i><s class="yj fr">￥615</s></p>
+				</div>	
+			</div>
+
+			<div class="goods fl">
+				<div class="border">
+				<a href="#"><img src="img/01_05.jpg" /></a>
+				<a href="#">
+					<p>Dior 迪奥 烈焰蓝金唇膏 #644.....</p>
+				</a>
+				<p class="sz">￥<span>259</span><i>包邮</i><s class="yj fr">￥320</s></p>
+				</div>	
+			</div>
+			<div class="goods fl">
+				<div class="border">
+				<a href="#"><img src="img/4_13.jpg" /></a>
+				<a href="#">
+					<p>LANCOME 兰蔻 小黑瓶精华肌底液....</p>
+				</a>
+				<p class="sz">￥<span>579</span><i>包邮</i><s class="yj fr">￥760</s></p>
+				</div>	
+			</div>
+
+			<div class="goods_r fr">
+				<div class="border">
+				<a href="#"><img src="img/01_09.gif" /></a>
+				<a href="#">
+					<p>LANCOME 兰蔻 绝对完美诱惑双层....</p>
+				</a>
+				<p class="sz">￥<span>319</span><i>8折</i><s class="yj fr">￥399</s></p>
+				</div>	
+			</div>
+		</div>
+		<div id="goods">
+			<div class="goods fl">
+				<div class="border">
+				<a href="#"><img src="img/01_09.gif" /></a>
+				<a href="#">
+					<p>Dior 迪奥 花漾甜心小姐女士淡香水...</p>
+				</a>
+				<p class="sz">￥<span>459</span><i>包邮</i><s class="yj fr">￥615</s></p>
+				</div>	
+			</div>
+
+			<div class="goods fl">
+				<div class="border">
+				<a href="#"><img src="img/01_05.jpg" /></a>
+				<a href="#">
+					<p>Dior 迪奥 烈焰蓝金唇膏 #644.....</p>
+				</a>
+				<p class="sz">￥<span>259</span><i>包邮</i><s class="yj fr">￥320</s></p>
+				</div>	
+			</div>
+			<div class="goods fl">
+				<div class="border">
+				<a href="#"><img src="img/4_10.jpg" /></a>
+				<a href="#">
+					<p>LANCOME 兰蔻 小黑瓶精华肌底液....</p>
+				</a>
+				<p class="sz">￥<span>579</span><i>包邮</i><s class="yj fr">￥760</s></p>
+				</div>	
+			</div>
+
+			<div class="goods_r fr">
+				<div class="border">
+					<a href="#"><img src="img/01_09.gif" /></a>
+					<a href="#">
+						<p>LANCOME 兰蔻 绝对完美诱惑双层....</p>
+					</a>
+					<p class="sz">￥<span>319</span><i>8折</i><s class="yj fr">￥399</s></p>
+				</div>	
+			</div>
+		</div>
+
+		<div id="page">
+			<span class="page_l fl">上一页</span>
+			<ul class="fl">
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+				<li>7</li>
+				<li>8</li>
+				<li>9</li>
+			</ul>
+			<span class="page_r fr">下一页</span>
+		</div>
+
+		<!--e内容-->
+
+		<!--S= 底部-->
+		<div id="botom_1">
+			<div class="beader_1">
+				<span class="img1 fl"></span>
+				<span class="img2 fl"></span>
+				<span class="img3 fl"></span>
+				<span class="img4 fl"></span>
+			</div>
+		</div>
+		<div id="button_2">
+			<div class="beader_2">
+				<ul class="beader_2_l fl">
+					<h3>购物指南</h3>
+					<a href="#">
+						<li>购物流程</li>
+					</a>
+					<a href="#">
+						<li>发票制度</li>
+					</a>
+					<a href="#">
+						<li>账户管理</li>
+					</a>
+					<a href="#">
+						<li>会员优惠</li>
+					</a>
+				</ul>
+				<ul class="beader_2_l fl">
+					<h3>支付方式</h3>
+					<a href="#">
+						<li>货到付款</li>
+					</a>
+					<a href="#">
+						<li>网上支付</li>
+					</a>
+					<a href="#">
+						<li>礼品卡</li>
+					</a>
+					<a href="#">
+						<li>银行转账</li>
+					</a>
+				</ul>
+				<ul class="beader_2_l fl">
+					<h3>订单服务</h3>
+					<a href="#">
+						<li>配送查询</li>
+					</a>
+					<a href="#">
+						<li>状态说明</li>
+					</a>
+					<a href="#">
+						<li>取消订单</li>
+					</a>
+					<a href="#">
+						<li>修改订单</li>
+					</a>
+				</ul>
+				<ul class="beader_2_l fl">
+					<h3>配送方式</h3>
+					<a href="#">
+						<li>配送范围</li>
+					</a>
+					<a href="#">
+						<li>免邮标准</li>
+					</a>
+					<a href="#">
+						<li>订单自提</li>
+					</a>
+					<a href="#">
+						<li>验货签收</li>
+					</a>
+				</ul>
+				<ul class="beader_2_l fr">
+					<h3>售后服务</h3>
+					<a href="#">
+						<li>售后政策</li>
+					</a>
+					<a href="#">
+						<li>价格保护</li>
+					</a>
+					<a href="#">
+						<li>退款说明</li>
+					</a>
+					<a href="#">
+						<li>退换货</li>
+					</a>
+				</ul>
+			</div>
+		</div>
+		<div id="button_3">
+			<div class="beader_3">
+				<p class="beader_3_top">
+					<a href="#">关于我们</a><span>|</span>
+					<a href="#">服务条款</a><span>|</span>
+					<a href="#">隐私保护</a><span>|</span>
+					<a href="#">联系我们</a><span>|</span>
+					<a href="#">帮助中心</a>
+				</p>
+				<p class="beader_3_bottom">
+					页面仅用于学习交流 版权所有 Copyright 2018 繁星2018.top
+					<a href="http://www.繁星2018.top." target="_blank">繁星博客</a>
+				</p>
+			</div>
+		</div>
+		<!--E= 底部-->
+	</body>
+
+</html>
