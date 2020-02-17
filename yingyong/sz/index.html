@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style>
+        .calendar {
+            height: 360px;
+            background-color: #59ACFF;
+            text-align: center;
+            color: #C1DBF5;
+        }
+        .calendar p {
+            color: #ffffff;
+            font: 400 18px/80px "微软雅黑";
+        }
+        #nowdate {
+            display: block;
+            height: 100px;
+            width: 100px;
+            background-color: #FF9600;
+            text-align: center;
+            margin: 0 auto;
+            font: 700 60px/100px "微软雅黑";
+            color: #ffffff;
+        }
+        .calendar strong {
+            margin: 20px auto;
+            padding: 5px;
+            display: block;
+            width: 415px;
+            height: 40px;
+            color: #ffffff;
+            font: 500 20px/26px "微软雅黑";
+            border-top: dashed 1px #ffffff;
+        }
+        #time {
+            color: #ffffff;
+            font: 500 20px/40px "微软雅黑";
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            //当前年月日ID
+            var fulldate = document.getElementById("fulldate");
+            //当前日  ID
+            var nowdate = document.getElementById("nowdate");
+            //倒计时ID
+            var time = document.getElementById("time");
+            //问候语ID
+            var hllo = document.getElementById("hllo");
+
+            //获取现在的年月日小时
+            var fullTime = new Date();
+            var year = fullTime.getFullYear();//年
+            var month = fullTime.getMonth();//月
+            var date = fullTime.getDate();//日
+            var hours = fullTime.getHours();//小时
+            var dayArr = [ "星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
+            //设置年月日
+            fulldate.innerHTML = year+" 年 "+(month+1)+" 月 "+date+" 日  "+dayArr[fullTime.getDay()];
+            //设置当前日
+            nowdate.innerHTML = date;
+           
+            //名言数组
+            var hlloarr = [
+                "只有登上山顶，才能看到那边的风光",
+                "山路曲折盘旋，但毕竟朝着顶峰延伸",
+                "勤奋是你生命的密码，能译出你一部壮丽的史诗",
+                "左右一个人成功的，不是能力，而是选择",
+                "我们这个世界，从不会给一个伤心的落伍者颁发奖牌",
+                "没有天生的信心，只有不断培养的信心",
+                "每一发奋努力的背后，必有加倍的赏赐",
+                "不要等待机会，而要创造机会",
+                "含泪播种的人一定能含笑收获",
+                "让信念坚持下去，梦想就会实现",
+                "不要给自己的失败找借口",
+                "要学会新东西，要不断进步，就必须放低自己的姿势"
+            ];
+            //当前时间段默认的名言
+            hllo.innerHTML = hlloarr[parseInt(hours/2)];
+
+
+            var endTime = new Date(year,month,date,23,59,59);//获取未来结束的时间
+            setInterval(fun,1000);//开启定时器
+            function fun() {
+                var newTime = new Date();//得到最新的时间
+                var ms = parseInt((endTime - newTime) / 1000); //得到毫秒，并取整
+                var s = parseInt(ms % 60);//秒
+                var m = parseInt((ms / 60) % 60); //分
+                var h = parseInt((ms / 3600) % 24);//小时
+                //var d = parseInt((ms / 3600) / 24);//天
+
+                s<10? s="0"+s:s;
+                m<10? m="0"+m:m;
+                h<10? h="0"+h:h;
+                //d<10? d="0"+d:d;
+                time.innerHTML = h +" 时 "+m+" 分 "+s+" 秒 ";
+                //每60秒切换一次名言
+                if(s == 0 ){
+                    hllo.innerHTML = hlloarr[parseInt(m%12)];
+                }
+
+
+            }
+        }
+    </script>
+
+<body>
+
+    <div class="calendar">
+        <p id="fulldate"></p>
+        <span id="nowdate"></span>
+        <strong id="hllo"></strong>
+        <span>----- 今天的余额 -----</span>
+        <div id="time"></div>
+    </div>
+
+</body>
+</html>
